@@ -1,0 +1,126 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>escapeLife</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+</head>
+
+<body>
+    <div class="overlay">
+        <h1>ESCAPE LIFE</h1>
+    </div>
+    <div class="wraper">
+        <div class="logo">escape</div>
+        <div class="nav">
+            <ul>
+                <li>Home</li>
+                <li>Places</li>
+                <li>Search</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <ul>
+                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                <li><i class="fa fa-google" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+        <div class="side-strip">
+            <span>Travel with us</span>
+        </div>
+        <div class="header">
+            <h1>The element<br>of nature</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nostrum adipisci quos sapiente distinctio repellendus autem odio quas nihil asperiores excepturi cumque
+                eum rem,
+                voluptatum numquam animi voluptate molestiae, eius ab!</p>
+            <button>EXPLORE</button>
+        </div>
+        <div class="bottom-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h6>Lorem ipsum </h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Officiis saepe eius labore expedita quasi, atque ipsum tempore itaque et ratione.
+                            Amet accusamus libero assumenda eveniet. Dolore cumque delectus fuga magnam.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h6>Lorem ipsum </h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Officiis saepe eius labore expedita quasi, atque ipsum tempore itaque et ratione.
+                            Amet accusamus libero assumenda eveniet. Dolore cumque delectus fuga magnam.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h6>Lorem ipsum </h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Officiis saepe eius labore expedita quasi, atque ipsum tempore itaque et ratione.
+                            Amet accusamus libero assumenda eveniet. Dolore cumque delectus fuga magnam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        TweenMax.to(".overlay h1", 2, {
+            opacity: 0,
+            y: 50,
+            ease: Expo.easeInOut
+        })
+        TweenMax.to(".overlay", 2, {
+            delay: 1.5,
+            top: "-100%",
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".logo", 1, {
+            delay: 1.5,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+        })
+        TweenMax.staggerFrom(".nav ul li", 1, {
+            delay: 2.4, opacity: 0, y: 20,
+            ease: Expo.easeInOut
+        }, 0.2)
+        TweenMax.staggerFrom(".social-media ul li", 1, {
+            delay: 2.4, opacity: 0, y: 20,
+            ease: Expo.easeInOut
+        }, 0.2)
+        TweenMax.from(".side-strip", 2, {
+            delay: 2.4,
+            opacity: 0,
+            y: 30,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".row", 2, {
+            delay: 2.1,
+            opacity: 0,
+            x: 40,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".row h6", 2, {
+            delay: 2.5,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".row p", 2, {
+            delay: 2.6,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+        })
+    </script>
+</body>
+
+</html>
